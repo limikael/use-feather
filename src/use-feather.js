@@ -57,9 +57,14 @@ class Feather {
             this.targetDelayTimeout=null;
         }
 
+        if (target==this.target)
+            return;
+
         this.target=target;
         if (!this.isAtRest())
             this.requestAnimation();
+
+        this.forceUpdate();
     }
 
     setTargetDelayed(target, delay) {
