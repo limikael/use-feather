@@ -64,7 +64,8 @@ class Feather {
         if (!this.isAtRest())
             this.requestAnimation();
 
-        this.forceUpdate();
+        if (this.initialEffectHasRan)
+            this.forceUpdate();
     }
 
     setTargetDelayed(target, delay) {
