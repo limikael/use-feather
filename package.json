@@ -1,6 +1,7 @@
 {
   "name": "use-feather",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/use-feather.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {}
 }
