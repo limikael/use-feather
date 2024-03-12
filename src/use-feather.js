@@ -155,6 +155,11 @@ class Feather {
             cancelAnimationFrame(this.animationFrameId);
             this.animationFrameId=undefined;
         }
+
+        if (this.targetDelayTimeout) {
+            clearTimeout(this.targetDelayTimeout);
+            this.targetDelayTimeout=null;
+        }
     }
 }
 
