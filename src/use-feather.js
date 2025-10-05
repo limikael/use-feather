@@ -9,6 +9,7 @@ class Feather {
             damping: 26,
             algo: "spring",
             decay: 1,
+            epsilon: 0.1
         }
 
         for (let k in defaultConf) {
@@ -21,7 +22,6 @@ class Feather {
         this.velocity=0;
         this.lastT=0;
         this.target=this.value;
-        this.epsilon=0.1;
         this.forceUpdate=conf.forceUpdate;
     }
 
